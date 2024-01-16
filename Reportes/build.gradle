@@ -1,0 +1,52 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.1'
+	id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.carpiocg'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	
+	
+	//dependencia de los reportes
+	//implementation 'net.sf.jasperreports:jasperreports:6.20.1'
+	implementation 'org.apache.poi:poi:5.2.3'
+	//implementation 'com.lowagie:itext:2.1.7'
+	//implementation 'org.codehaus.groovy:groovy-all:3.0.9'
+	// https://mvnrepository.com/artifact/com.lowagie/itext
+	//implementation 'com.lowagie:itext:4.2.2'
+	
+	//implementation 'com.itextpdf:itextpdf:5.5.13.2'
+	
+	implementation 'net.sf.jasperreports:jasperreports:6.20.0'
+	//implementation 'com.itextpdf:itextpdf:5.5.13.2'
+	
+	//implementation 'net.sf.jasperreports:jasperreports:5.6.0'
+	implementation 'com.lowagie:itext:2.1.7'
+	
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

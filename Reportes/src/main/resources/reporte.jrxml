@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporte_vacio" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="32908713-d1f1-444c-8c00-e0ced5cb8902">
+	<title>
+		<band height="50">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="50" uuid="ae86464a-2e5e-429f-88e1-08a0fba7f88f"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Informe Vacío"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="200">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="20" uuid="31349a05-431b-4ab3-8a48-366352031ae0"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Este informe no contiene datos.]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
